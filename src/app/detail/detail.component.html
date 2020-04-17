@@ -1,0 +1,12 @@
+<h4>
+  {{news.title}}
+</h4>
+
+<img *ngIf="news.urlToImage==null" src="https://via.placeholder.com/150C/O https://placeholder.com/"
+  class="pull-left thumb" />
+<img *ngIf="news.urlToImage!=null" src="{{news.urlToImage}}" class="pull-left thumb" />
+<p>
+  {{news.content}}
+</p>
+
+<div>source: <a href="{{news.link}}">{{news.link}}</a></div>

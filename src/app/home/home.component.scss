@@ -1,0 +1,38 @@
+.pull-left{
+    float: left;
+}
+
+.pull-right{
+    float: left;
+}
+
+.search input{
+    width:99%;
+    height:30px;
+}
+
+.list{
+    .thumb{
+        width:80px;
+        height: 60px;
+    }
+    ul{
+        padding:0px;
+        margin:0px;
+        li{
+            list-style:none; 
+            padding:10px;
+            border:1px dashed #cdcdcd;
+            display:block;
+            position: relative;
+            overflow: hidden;
+            .right-content{
+                margin-left: 10px;
+                h4{
+                    padding:0px;
+                    margin:0px;
+                }
+            }
+        }
+    }
+}

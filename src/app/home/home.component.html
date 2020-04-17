@@ -1,0 +1,23 @@
+<div>
+  <div class="search">
+    <input type="text" [(ngModel)]="q" (change)="onSearch()" />
+  </div>
+
+  <div class="list">
+    <ul>
+      <li *ngFor="let item of list" (click)="goToDetail(item)">
+
+        <img *ngIf="item.urlToImage==null" src="https://via.placeholder.com/150C/O https://placeholder.com/"
+          class="pull-left thumb" />
+        <img *ngIf="item.urlToImage!=null" src="{{item.urlToImage}}" class="pull-left thumb" />
+        <div class="pull-right right-content">
+          <h4>{{item.title}}</h4>
+          <div>{{item.description}}</div>
+          <i>{{item.publishedAt}}</i>
+        </div>
+
+
+      </li>
+    </ul>
+  </div>
+</div>
